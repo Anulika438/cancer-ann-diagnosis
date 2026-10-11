@@ -1,0 +1,190 @@
+{
+  "raw_shape": [
+    1000,
+    25
+  ],
+  "missing_values": 0,
+  "duplicates_removed": 848,
+  "label_conflicts": 0,
+  "unique_profiles": 152,
+  "outliers_clipped": {},
+  "class_counts": {
+    "High": 53,
+    "Medium": 52,
+    "Low": 47
+  },
+  "n_dev": 121,
+  "n_test": 31,
+  "cv_5fold": {
+    "baseline": {
+      "accuracy": [
+        0.9586666666666666,
+        0.026360745226356737
+      ],
+      "precision": [
+        0.9618518518518518,
+        0.02504728039416721
+      ],
+      "recall": [
+        0.9580687830687831,
+        0.026565905207689304
+      ],
+      "f1": [
+        0.9579316503929508,
+        0.02640991146982731
+      ]
+    },
+    "improved": {
+      "accuracy": [
+        0.95,
+        0.06123724356957944
+      ],
+      "precision": [
+        0.9594107744107745,
+        0.048624599845581776
+      ],
+      "recall": [
+        0.9488095238095239,
+        0.06112141739520682
+      ],
+      "f1": [
+        0.9487527453626525,
+        0.06292856972398703
+      ]
+    }
+  },
+  "holdout_test": {
+    "baseline": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "epochs_run": 32,
+      "params": 1347,
+      "report": {
+        "Low": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 9.0
+        },
+        "Medium": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 11.0
+        },
+        "High": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 11.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 31.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 31.0
+        }
+      },
+      "confusion": [
+        [
+          9,
+          0,
+          0
+        ],
+        [
+          0,
+          11,
+          0
+        ],
+        [
+          0,
+          0,
+          11
+        ]
+      ]
+    },
+    "improved": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "epochs_run": 77,
+      "params": 4579,
+      "report": {
+        "Low": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 9.0
+        },
+        "Medium": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 11.0
+        },
+        "High": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 11.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 31.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 31.0
+        }
+      },
+      "confusion": [
+        [
+          9,
+          0,
+          0
+        ],
+        [
+          0,
+          11,
+          0
+        ],
+        [
+          0,
+          0,
+          11
+        ]
+      ]
+    }
+  },
+  "leakage_demo": {
+    "naive_split_accuracy": 1.0,
+    "pct_test_rows_seen_in_train": 0.92
+  },
+  "permutation_importance_top10": {
+    "Swallowing Difficulty": 0.03387096774193548,
+    "Wheezing": 0.02096774193548386,
+    "chronic Lung Disease": 0.019354838709677403,
+    "Passive Smoker": 0.01774193548387095,
+    "Coughing of Blood": 0.014516129032258056,
+    "Dust Allergy": 0.011290322580645152,
+    "Clubbing of Finger Nails": 0.0064516129032258,
+    "Fatigue": 0.004838709677419351,
+    "Shortness of Breath": 0.004838709677419351,
+    "Air Pollution": 0.0032258064516129
+  }
+}
